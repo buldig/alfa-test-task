@@ -16,13 +16,10 @@ const Card: FC<CardItemProps> = ({ cat }) => {
   const handleDelete = () => {
     dispatch(deleteCat(cat.id));
   };
-  // @ts-ignore
-  // @ts-ignore
-  // @ts-ignore
   return (
     <div className="w-48 h-40 mr-4 mb-8 box-border rounded relative">
       <div
-        className="absolute top-0 right-0 hover:bg-slate-100"
+        className="absolute top-0 right-0 hover:bg-slate-100 hover:rounded"
         role={"button"}
         onClick={handleDelete}
       >
@@ -42,7 +39,12 @@ const Card: FC<CardItemProps> = ({ cat }) => {
         </svg>
       </div>
 
-      <img className="w-full h-full" key={cat.id} src={cat.url} alt="cat"></img>
+      <img
+        className="w-full h-full "
+        key={cat.id}
+        src={cat.url}
+        alt="cat"
+      ></img>
       <p className="">
         Порода:
         {cat?.breeds.length !== 0 ? cat?.breeds[0]?.name : " не породистый"}

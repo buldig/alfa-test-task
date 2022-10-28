@@ -12,7 +12,7 @@ function App() {
     dispatch(fetchCats());
   }, [dispatch]);
   return (
-    <div>
+    <div style={{ backgroundColor: "#a8d7e1" }} className="w-screen h-screen">
       {isLoading && <h1>Идет загрузка...</h1>}
       {error && <h1>{error}</h1>}
 

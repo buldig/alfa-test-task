@@ -8,7 +8,7 @@ interface ILike {
 const Like: FC<ILike> = ({ like, onClick }) => {
   return (
     <div
-      className="absolute bottom-0 right-0"
+      className="absolute bottom-0 right-0 hover:bg-slate-100 hover:rounded"
       role={"button"}
       onClick={onClick}
     >
