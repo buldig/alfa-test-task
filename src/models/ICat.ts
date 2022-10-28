@@ -1,5 +1,5 @@
 export interface ICat {
-  breeds?: Array<string>;
+  breeds?: Array<any>;
   id: string;
   url: string;
   width: string;

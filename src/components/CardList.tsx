@@ -13,7 +13,7 @@ const CardList = () => {
     else setFilteredCats(cats);
     setFiltered((prevState) => !prevState);
   };
-
+  console.log(filteredCats);
   useEffect(() => {
     setFilteredCats(cats);
   }, [cats]);
